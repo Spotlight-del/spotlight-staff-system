@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    color: #222;
+}
+
+
+/* HEADER */
+
+header {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+    letter-spacing: 4px;
+}
+
+header p {
+    margin: 8px 0 0;
+    color: #cccccc;
+}
+
+
+/* MAIN */
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+
+/* LOGIN CARD */
+
+.login-card,
+.status-card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.login-card h2,
+.status-card h2 {
+    margin-top: 0;
+}
+
+
+/* INPUT */
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+
+/* BUTTON */
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #111;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #333;
+}
+
+
+/* MESSAGE */
+
+#message {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+
+/* STATUS HEADER */
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.section-heading p {
+    margin-top: -10px;
+    color: #777;
+}
+
+#currentTime {
+    font-weight: bold;
+}
+
+
+/* STAFF MEMBER */
+
+.staff-member {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 18px;
+    margin-top: 12px;
+}
+
+.staff-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.staff-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.status {
+    font-weight: bold;
+}
+
+.logged-in {
+    color: green;
+}
+
+.logged-out {
+    color: #777;
+}
+
+.times {
+    margin-top: 10px;
+    color: #666;
+    font-size: 14px;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #777;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    .section-heading {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
